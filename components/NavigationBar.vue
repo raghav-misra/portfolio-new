@@ -10,7 +10,7 @@ import { socials, navigation } from "~/assets/data";
                 <h1 class="h3">Raghav Misra</h1>
             </header>
 
-            <section class="vertical-nav">
+            <section class="vertical-nav pages-bar">
                 <NuxtLink
                     class="nav-item"
                     v-for="(link, i) in navigation"
@@ -87,12 +87,6 @@ nav > * {
     transition: transform 0.25s ease-in-out;
 }
 
-.nav-item:hover,
-.nav-item:active {
-    transform: scale(1.125);
-    color: var(--primary);
-}
-
 .float-bottom {
     margin-top: auto;
 }
@@ -100,6 +94,14 @@ nav > * {
 .logo {
     width: 5rem;
     height: 5rem;
+}
+
+@media screen and (min-width: 615px) {
+    .nav-item:hover,
+    .nav-item:active {
+        transform: scale(1.125);
+        color: var(--primary);
+    }
 }
 
 @media screen and (max-width: 850px) {
@@ -122,27 +124,24 @@ nav > * {
 
     header {
         flex-direction: row;
-    }
-
-    .logo {
-        margin-right: 1rem;
-        width: 3.75rem;
-    }
-
-    header h1 {
-        font-size: 1.75rem !important;
+        padding: 0.5rem;
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 615px) {
+    .pages-bar {
+        padding: 0.5rem;
+        padding-top: 0rem;
+        display:grid;
+        grid-template-columns: auto auto;
+        grid-row: auto auto;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+
     .component-navbar {
         margin: 0;
         padding: 0;
-    }
-
-    .vertical-nav:not(.social-bar) .nav-item {
-        display: inline-block;
-        margin: 0 0.5rem;
     }
 
     nav {

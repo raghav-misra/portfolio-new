@@ -14,7 +14,7 @@ export const socials = [
 
 export const navigation = [
     { title: "About Me", href: "/" },
-    { title: "My Projects", href: "/projects" },
+    { title: "Projects", href: "/projects" },
     { title: "Experience", href: "/experience" },
     { title: "Get in Touch", href: "/contact" }
 ];
