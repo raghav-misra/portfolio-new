@@ -61,11 +61,11 @@ main {
     animation: fade-in 0.75s;
 }
 
-.bounce-enter-active {
+.page-enter-active {
     animation: bounce-in 0.75s;
 }
 
-.bounce-leave-active {
+.page-leave-active {
     animation: bounce-out 0.75s;
 }
 

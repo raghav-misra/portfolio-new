@@ -1,3 +1,7 @@
+<script setup lang="ts">
+import { socials, navigation } from "~/assets/data";
+</script>
+
 <template>
     <aside class="component-navbar">
         <nav>
@@ -34,10 +38,6 @@
         </nav>
     </aside>
 </template>
-
-<script setup lang="ts">
-import { socials, navigation } from "~/assets/data";
-</script>
 
 <style scoped>
 aside {

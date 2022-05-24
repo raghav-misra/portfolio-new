@@ -3,9 +3,6 @@ import { defineNuxtConfig } from 'nuxt'
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
     css: ["~/styles/index.css"],
-    pageTransition: {
-        name: "bounce"
-    },
     meta: {
         title: "Raghav Misra",
         charset: "utf-8",
