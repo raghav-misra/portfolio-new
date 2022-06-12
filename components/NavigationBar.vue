@@ -6,7 +6,7 @@ import { socials, navigation } from "~/assets/data";
     <aside class="component-navbar">
         <nav>
             <header>
-                <img class="logo" alt="Logo" src="@/assets/logo.png" />
+                <img class="logo" alt="Logo" src="~/assets/profile.jpg" />
                 <h1 class="h3">Raghav Misra</h1>
             </header>
 
@@ -92,8 +92,10 @@ nav > * {
 }
 
 .logo {
-    width: 5rem;
-    height: 5rem;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    margin-bottom: 0.25rem;
 }
 
 @media screen and (min-width: 615px) {
