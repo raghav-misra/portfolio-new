@@ -3,6 +3,9 @@ import { defineNuxtConfig } from 'nuxt'
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
     css: ["~/styles/index.css"],
+    modules: [
+        "@nuxt/content"
+    ],
     meta: {
         title: "Raghav Misra",
         charset: "utf-8",

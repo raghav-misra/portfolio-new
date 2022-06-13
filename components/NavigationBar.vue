@@ -42,6 +42,7 @@ import { socials, navigation } from "~/assets/data";
 <style scoped>
 aside {
     padding: 2rem;
+    line-height: 1.25;
 }
 
 header {

@@ -1,0 +1,3 @@
+Hey! 👋 I'm Raghav, a fullstack engineer and lover of all things web development. Currently, I'm a product engineering intern at [Meridian Knowledge Solutions](https://meridianks.com) and a software engineering intern at [Banqfora](https://www.banqfora.com). Outside of work & school, I spend most of my free time building side projects (which you're more than welcome to check out [here](/projects) 💖) ranging from useful to utterly useless.
+
+My expertise lies in web development, and my language of choice is TypeScript. On the fronte
