@@ -14,7 +14,7 @@ export default defineNuxtConfig({
             {
                 hid: "description",
                 name: "description",
-                content: "High-schooler, full-stack web developer, intern @ Hack+"
+                content: "Full stack web engineer, high school senior."
             }
         ],
         link: [
