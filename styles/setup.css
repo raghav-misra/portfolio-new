@@ -60,16 +60,6 @@ code, .code {
     scrollbar-width: thin;
 }
 
-/* Links */
-a:not(.button) {
-    transition: 0.25s color ease-in-out;
-}
-
-a:not(.button):hover,
-a:not(.button):active {
-    color: var(--success) !important;
-}
-
 /* page transition */
 main {
     animation: fade-in 0.75s;

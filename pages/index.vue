@@ -1,9 +1,27 @@
 <script setup lang="ts">
 const caption = useTyped("one line of code at a time", 75);
 
+const skills = {
+    "Languages": [
+        "HTML/CSS/JS", "TypeScript",
+        "Python", "C#", "Kotlin"
+    ],
+    "Frontend": [
+        "React & Next", "Vue & Nuxt",
+        "Angular", "Web Components"
+    ],
+    "Backend": [
+        "NodeJS", "Express & Nest", 
+        "Flask & Django", "MongoDB"
+    ],
+    "Mobile": [
+        "Android Kotlin", "React Native",
+        "Ionic Capacitor", "Xamarin"
+    ]
+}
+
 const { data: aboutContent } = 
     await useAsyncData("aboutContent", () => queryContent("/about").findOne());
-
 </script>
 
 <template>
@@ -16,8 +34,17 @@ const { data: aboutContent } =
             </code>
         </header>
 
-        <article class="content">
-            <ContentRenderer :value="aboutContent" />
+        <article>
+            <ContentRenderer class="content" :value="aboutContent" />
+
+            <h2 class="h3">My Skillset</h2>
+            <div>
+                <SkillBar 
+                    v-for="(names, title) in skills" 
+                    :title="title" 
+                    :skills="names" 
+                />
+            </div>
         </article>
     </section>
 </template>
@@ -38,9 +65,5 @@ header .cursor {
     50% {
         width: 0;
     }
-}
-
-article {
-    margin-top: 2rem;
 }
 </style>
