@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { socials, navigation } from "~/assets/data";
+import { socials, navigation } from "~~/assets/data";
 </script>
 
 <template>
@@ -62,7 +62,6 @@ nav {
     display: flex;
     flex-direction: column;
     text-align: center;
-    box-shadow: 0px 0px 20px var(--darkest);
 }
 
 nav > * {
@@ -96,7 +95,7 @@ nav > * {
     width: 6rem;
     height: 6rem;
     border-radius: 50%;
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.5rem;
 }
 
 @media screen and (min-width: 615px) {

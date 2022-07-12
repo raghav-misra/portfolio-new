@@ -7,7 +7,7 @@ export default defineNuxtConfig({
         "@nuxt/content"
     ],
     meta: {
-        title: "Raghav Misra",
+        titleTemplate: `Raghav Misra - %s`,
         charset: "utf-8",
         viewport: "width=device-width, initial-scale=1",
         meta: [

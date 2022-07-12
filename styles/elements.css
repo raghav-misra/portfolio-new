@@ -20,10 +20,6 @@ html {
 a {
     text-decoration: none;
     color: var(--primary);
-}
-
-/* Links */
-a {
     transition: 0.25s color ease-in-out;
 }
 
@@ -34,4 +30,25 @@ a:active {
 
 a > .icon {
     color: inherit;
+}
+
+/* box */
+.box {
+    padding: 0.5rem 1rem;
+    margin: 1rem 0;
+    background: var(--info);
+    border-radius: 20px;
+}
+
+.box-padding {
+    padding: 0.5rem 1rem;
+}
+
+/* hr */
+hr {
+    margin: 0.75rem 0;
+    height: 2px;
+    background: var(--light);
+    border: none;
+    border-radius: 20px;
 }

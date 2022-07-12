@@ -22,6 +22,10 @@ const skills = {
 
 const { data: aboutContent } = 
     await useAsyncData("aboutContent", () => queryContent("/about").findOne());
+
+useHead({
+    title: "About"
+});
 </script>
 
 <template>

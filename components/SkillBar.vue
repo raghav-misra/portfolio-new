@@ -6,7 +6,7 @@ defineProps<{
 </script>
 
 <template>
-    <div class="skillbar">
+    <div class="skillbar box">
         <h3 class="title">{{ title }}</h3>
         <div class="skills">
             <span 
@@ -34,18 +34,7 @@ defineProps<{
 .skillbar {
     display: flex;
     align-items: center;
-    padding: 0.5rem 1rem;
-    margin: 1rem 0;
-    background: var(--info);
-    border-radius: 20px;
-    transition: 0.25s background ease-in-out;
-    cursor: pointer;
-    overflow: hidden;
     animation: progress-in 0.75s ease-in-out;
-}
-
-.skillbar:hover {
-    background: var(--primary);
 }
 
 .title {
