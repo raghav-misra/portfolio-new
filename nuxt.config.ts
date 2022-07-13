@@ -47,6 +47,13 @@ export default defineNuxtConfig({
                 media: "print",
                 onload: "this.media = 'all';"
             }
+        ],
+        script: [
+            {
+                src: "https://identity.netlify.com/v1/netlify-identity-widget.js",
+                async: "async",
+                defer: "defer"
+            }
         ]
     },
 });
