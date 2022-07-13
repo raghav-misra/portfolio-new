@@ -3,15 +3,14 @@ const props = defineProps<{
     experience: IExperience
 }>();
 
-console.log(props);
+const formatDate = (inDate?: string) => inDate?.split("/").reverse().join("/") || "current";
 </script>
 
 <template>
     <div class="experience-card box">
-        <h2>
-            <span class="h4">{{ experience.title }}&nbsp;</span>
-            <small>({{ experience.time.from }}—{{ experience.time.to || "" }})</small>
-        </h2>
+        <header>
+            <b class="h4">{{ experience.title }}&nbsp;</b>
+        </header>
         <a 
             class="h6"
             target="_blank"
@@ -19,11 +18,11 @@ console.log(props);
         >
             {{ experience.org.name }}
         </a>
+        <small>
+            ({{ formatDate(experience.time.from) }}—{{ formatDate(experience.time.to) }})
+        </small>
         <p>
            {{ experience.description }}
         </p>
     </div>
 </template>
-
-<style scoped>
-</style>

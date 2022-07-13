@@ -6,6 +6,10 @@ useHead({
 
 <template>
     <section class="page">
-        <h1 class="h2">My Projects</h1>
+        <header id="top">
+            <h1 class="h2">My Projects</h1>
+        </header>
+
+        <BackToTop />
     </section>
 </template>

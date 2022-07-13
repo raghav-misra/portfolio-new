@@ -4,7 +4,7 @@ const caption = useTyped("one line of code at a time", 75);
 const skills = {
     "Languages": [
         "HTML/CSS/JS", "TypeScript",
-        "Python", "C#", "Kotlin"
+        "C++", "Python", "C#", "Kotlin"
     ],
     "Frontend": [
         "React & Next", "Vue & Nuxt",
