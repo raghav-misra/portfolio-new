@@ -1,10 +1,8 @@
 title: Fullstack Engineer
-org:
-    name: My New Liver
-    site: https://www.mynewliver.org/
-time:
-    from: 2020/05
-    to: 2020/09
+orgName: My New Liver
+orgSite: https://www.mynewliver.org/
+startDate: 2020/05
+endDate: 2020/09
 description: >
     I built the first iteration of the mynewliver.org website, with VueJS, TypeScript and Express
     and worked closely with the project's founders to directly contribute to its vision & direction.

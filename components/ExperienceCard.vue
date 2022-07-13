@@ -14,12 +14,12 @@ const formatDate = (inDate?: string) => inDate?.split("/").reverse().join("/") |
         <a 
             class="h6"
             target="_blank"
-            :href="experience.org.site"    
+            :href="experience.orgSite"    
         >
-            {{ experience.org.name }}
+            {{ experience.orgName }}
         </a>
         <small>
-            ({{ formatDate(experience.time.from) }}—{{ formatDate(experience.time.to) }})
+            ({{ formatDate(experience.startDate) }}—{{ formatDate(experience.endDate) }})
         </small>
         <p>
            {{ experience.description }}

@@ -1,0 +1,23 @@
+backend:
+    name: git-gateway
+    branch: master 
+
+publish_mode: editorial_workflow
+
+media_folder: public/img
+public_folder: /img
+
+collections:
+  - name: "experiences"
+    label: "Experiences"
+    folder: "content/experiences"
+    format: "yaml"
+    create: true
+    slug: "{{slug}}"
+    fields:
+        - { label: "Title", name: "title", widget: "string" }
+        - { label: "Organization Name", name: "orgName", widget: "string" }
+        - { label: "Organization Website", name: "orgSite", widget: "string" }
+        - { label: "Start Date", name: "startDate", widget: "date", format: "YYYY/MM" }
+        - { label: "End Date", name: "endDate", widget: "date", format: "YYYY/MM" }
+        - { label: "Description", name: "description", widget: "text" }
