@@ -56,4 +56,7 @@ export default defineNuxtConfig({
             }
         ]
     },
+    runtimeConfig: {
+        discordWebhookEndpoint: process.env.DISCORD_WEBHOOK_ENDPOINT
+    }
 });

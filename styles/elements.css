@@ -41,7 +41,7 @@ a > .icon {
 }
 
 .box.big {
-    padding: 1rem 1rem;
+    padding: 1.5rem 1rem;
 }
 
 .box-padding {
@@ -60,4 +60,17 @@ hr {
 /* placeholder */
 ::placeholder {
     color: var(--placeholder);
+}
+
+/* button */
+button {
+    padding: 0.5rem 1rem;
+    background: var(--accent, var(--info));
+    border: none;
+    color: var(--info);
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    position: relative;
 }

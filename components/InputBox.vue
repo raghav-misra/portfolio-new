@@ -3,16 +3,34 @@ const props = defineProps<{
     label: string;
     type: string;
     placeholder: string;
+    required: boolean;
+    modelValue: string;
 }>();
+
+const emit = defineEmits(["update:modelValue"]);
+
+function updateValue(event: Event) {
+    emit("update:modelValue", (event.target as HTMLInputElement).value);
+}
 </script>
 
 <template>
     <div class="input-field">
         <label class="h5"><b>{{ label }}</b></label>
-        <component 
-            :is="type === 'multiline' ? 'textarea' : 'input'"
-            :type="type !== 'multiline' && type"
+        <textarea
+            v-if="type === 'multiline'"
             :placeholder="placeholder"
+            :required="required"
+            :value="modelValue"
+            @input="updateValue"
+        />
+        <input 
+            v-else
+            :type="type"
+            :placeholder="placeholder"
+            :required="required"
+            :value="modelValue"
+            @input="updateValue"
         />
     </div>
 </template>
@@ -26,13 +44,16 @@ const props = defineProps<{
 
 label {
     margin-bottom: 0.5rem;
+    animation: slide-in-right 0.75s;
 }
 
 input, textarea {
+    animation: slide-in-left 0.75s;
     background: var(--dark);
-    padding: 0.75rem;
+    padding: 1rem;
     border: none;
     border-radius: 8px;
     font-size: 1rem;
+    resize: vertical;
 }
 </style>

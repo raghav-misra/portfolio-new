@@ -26,3 +26,9 @@ const formatDate = (inDate?: string) => inDate?.split("/").reverse().join("/") |
         </p>
     </div>
 </template>
+
+<style scoped>
+.experience-card {
+    animation: open-up-x 0.75s;
+}
+</style>

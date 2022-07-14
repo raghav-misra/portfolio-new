@@ -19,22 +19,10 @@ defineProps<{
 </template>
 
 <style scoped>
-@keyframes progress-in {
-    from {
-        transform: translateX(-500px);
-        opacity: 0;
-    }
-
-    to {
-        transform: none;
-        opacity: 1;
-    }
-}
-
 .skillbar {
     display: flex;
     align-items: center;
-    animation: progress-in 0.75s ease-in-out;
+    animation: slide-in-left 0.75s ease-in-out;
 }
 
 .title {
