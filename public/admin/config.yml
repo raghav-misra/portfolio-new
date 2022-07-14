@@ -1,6 +1,6 @@
 backend:
-    name: git-gateway
-    branch: master 
+  name: git-gateway
+  branch: master
 
 publish_mode: editorial_workflow
 
@@ -15,9 +15,9 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-        - { label: "Title", name: "title", widget: "string" }
-        - { label: "Organization Name", name: "orgName", widget: "string" }
-        - { label: "Organization Website", name: "orgSite", widget: "string" }
-        - { label: "Start Date", name: "startDate", widget: "date", format: "YYYY/MM" }
-        - { label: "End Date", name: "endDate", widget: "date", format: "YYYY/MM" }
-        - { label: "Description", name: "description", widget: "text" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Organization Name", name: "orgName", widget: "string" }
+      - { label: "Organization Website", name: "orgSite", widget: "string" }
+      - { label: "Start Date (yyyy/mm)", name: "startDate", widget: "string" }
+      - { label: "End Date (yyyy/mm)", name: "endDate", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
