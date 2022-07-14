@@ -19,5 +19,5 @@ collections:
       - { label: "Organization Name", name: "orgName", widget: "string" }
       - { label: "Organization Website", name: "orgSite", widget: "string" }
       - { label: "Start Date (yyyy/mm)", name: "startDate", widget: "string" }
-      - { label: "End Date (yyyy/mm)", name: "endDate", widget: "string" }
+      - { label: "End Date (yyyy/mm)", name: "endDate", widget: "string", required: false }
       - { label: "Description", name: "description", widget: "text" }
