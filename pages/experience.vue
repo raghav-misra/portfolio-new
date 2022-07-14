@@ -4,7 +4,7 @@ useHead({
 });
 
 const { data: experiencesContent } = 
-    await useAsyncData("experiencesContent", () => queryContent<IExperience>("/experiences").sort({ "time.from": -1 }).find());
+    await useAsyncData("experiencesContent", () => queryContent<IExperience>("/experiences").sort({ startDate: -1 }).find());
 </script>
 
 <template>

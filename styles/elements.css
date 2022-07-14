@@ -40,6 +40,10 @@ a > .icon {
     border-radius: 20px;
 }
 
+.box.big {
+    padding: 1rem 1rem;
+}
+
 .box-padding {
     padding: 0.5rem 1rem;
 }
@@ -51,4 +55,9 @@ hr {
     background: var(--light);
     border: none;
     border-radius: 20px;
+}
+
+/* placeholder */
+::placeholder {
+    color: var(--placeholder);
 }
