@@ -1,0 +1,1 @@
+export const formatDate = (inDate?: string) => inDate?.split("/").reverse().join("/") || "current";

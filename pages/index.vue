@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const caption = useTyped("one line of code at a time", 75);
+const caption = typed("one line of code at a time", 75);
 
 const skills = {
     "Languages": [

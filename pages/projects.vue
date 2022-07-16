@@ -10,6 +10,8 @@ useHead({
             <h1 class="h2">My Projects</h1>
         </header>
 
+        <ProjectCard />
+
         <BackToTop />
     </section>
 </template>

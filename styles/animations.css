@@ -33,3 +33,15 @@
         opacity: 1;
     }
 }
+
+@keyframes open-up-y {
+    from {
+        transform: skewY(30deg);
+        opacity: 0;
+    }
+
+    to {
+        transform: none;
+        opacity: 1;
+    }
+}

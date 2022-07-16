@@ -19,12 +19,15 @@ html {
 /* links */
 a {
     text-decoration: none;
+} 
+
+a:not(.button) {
     color: var(--primary);
     transition: 0.25s color ease-in-out;
 }
 
-a:hover,
-a:active {
+a:not(.button):hover,
+a:not(.button):active {
     color: var(--success);
 }
 
@@ -38,6 +41,7 @@ a > .icon {
     margin: 1rem 0;
     background: var(--info);
     border-radius: 20px;
+    overflow: hidden;
 }
 
 .box.big {
@@ -63,14 +67,15 @@ hr {
 }
 
 /* button */
-button {
+button, .button {
     padding: 0.5rem 1rem;
     background: var(--accent, var(--info));
     border: none;
-    color: var(--info);
+    color: var(--text, var(--light));
     border-radius: 8px;
     font-size: 1rem;
     cursor: pointer;
     display: flex;
+    justify-content: center;
     position: relative;
 }

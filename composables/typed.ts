@@ -1,4 +1,4 @@
-export function useTyped(caption: string, time: number) {
+export function typed(caption: string, time: number) {
     const currentCaptionLength = ref(0);
     const currentCaption = computed(() => {
         const chars = caption.split("");
