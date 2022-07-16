@@ -106,7 +106,7 @@ nav > * {
     }
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 910px) {
     .logo {
         display: none;
     }

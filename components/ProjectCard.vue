@@ -65,21 +65,22 @@ const getButtonStyles = (i: number) => {
     align-items: stretch;
 }
 
-.card-text, .preview {
-    flex: 7;
-    background-size: cover;
+.card-text {
+    width: 60%;
 }
 
 .preview {
-    flex: 5;
+    width: 40%;
     margin-left: 2rem;
     background-position: center;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     transform: skew(10deg) scale(1.25);
     transition: all 0.2s;
+    overflow: hidden;
 }
 
 .preview:hover {
@@ -87,7 +88,7 @@ const getButtonStyles = (i: number) => {
 }
 
 .preview .button {
-    width: min(100%, 200px);
+    width: 200px;
     margin: 0.25rem 0;
     transform: scale(0.75) skew(-10deg);
     transition: all 0.2s;
@@ -98,6 +99,27 @@ const getButtonStyles = (i: number) => {
     transform: skew(5deg) scale(0.75);
     /* margin: 0.5rem 0; */
     opacity: 1;
+}
+
+@media screen and (max-width: 1100px) {
+    .preview .button {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .preview, .preview .button {
+        transform: none !important;
+        margin: 0;
+    }
+
+    .experience-card {
+        flex-direction: column;
+    }
+
+    .card-text, .preview {
+        width: auto;
+    }
 }
 
 .card-text > * {
