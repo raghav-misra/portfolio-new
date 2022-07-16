@@ -3,7 +3,7 @@
         "name": "git-gateway",
         "branch": "master"
     },
-    "media_folder": "public/ims/cms",
+    "media_folder": "public/img/cms",
     "public_folder": "/img/cms",
     "collections": [
         {
