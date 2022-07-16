@@ -1,0 +1,17 @@
+title: CardForge
+startDate: 2021/06
+tags: typescript,vue,colyseusjs
+image: /img/cms/cardforge.png
+description: An AI-powered, multiplayer card game, where all the creativity is in your hand!
+award:
+  exists: true
+  title: Won First Place
+  compName: TritonHacks 2021
+  compSite: https://www.tritonhacks.org/
+links:
+  - name: Check it out!
+    site: https://www.tritonhacks.org/
+  - name: View source
+    site: https://github.com/cardforge-game
+  - name: View submission
+    site: https://devpost.com/software/cardforge
