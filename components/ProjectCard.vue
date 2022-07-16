@@ -1,45 +1,9 @@
 <script setup lang="ts">
-interface IProject {
-    name: string;
-    tags: string[];
-    image: string;
-    description: string;
-    award?: {
-        title: string;
-        compName: string;
-        compSite: string;
-    };
-    links: ({
-        name: string;
-        site: string;
-    })[];
-}
+import { formatDate } from '~~/composables/formatDate';
 
-const project: IProject = {
-    name: "Disasternaut",
-    tags: ["typescript", "kaboomjs"],
-    image: "https://replit.com/cdn-cgi/image/width=3840,quality=80/https://storage.googleapis.com/replit/images/1635135533858_25651527b24d404b421ff6460df64d0c.jpeg",
-    description: "Become the intergalactic colonist you always dreamed you'd be! Make your family proud!",
-    award: {
-        title: "Won Best Story",
-        compName: "Replit Kajam 2022",
-        compSite: "https://epicgames.com"
-    },
-    links: [
-        {
-            name: "Play the game!",
-            site: "https://epicgames.com"
-        },
-        {
-            name: "View source",
-            site: "https://epicgames.com"
-        },
-        {
-            name: "View submission",
-            site: "https://epicgames.com"
-        }
-    ],
-};
+defineProps<{
+    project: IProject;
+}>();
 
 const getButtonStyles = (i: number) => {
     const accentChoices = ["success", "warning", "primary"];
@@ -54,18 +18,21 @@ const getButtonStyles = (i: number) => {
     <div class="experience-card box">
         <div class="card-text box-padding">
             <header>
-                <b class="h3">{{ project.name }}&nbsp;</b>
+                <b class="h3">{{ project.title }}&nbsp;</b>
+                <b style="color: var(--warning);">
+                    ({{ formatDate(project.startDate) }})
+                </b>
             </header>
 
             <p class="tags code">
-                <small v-for="tag in project.tags">{{ tag }}</small>
+                <small v-for="tag in project.tags.split(',')">{{ tag }}</small>
             </p>
 
             <p>
                 {{ project.description }}
             </p>
 
-            <small v-if="project.award">
+            <small v-if="project.award.exists">
                 <b>{{ project.award.title }}</b> @ 
                 <a :href="project.award.compSite" target="_blank">
                     {{ project.award.compName }}
@@ -91,7 +58,7 @@ const getButtonStyles = (i: number) => {
 
 <style scoped>
 .experience-card {
-    animation: open-up-y 0.75s;
+    animation: open-up-y 0.5s;
     background: var(--info);
     padding: 0;
     display: flex;
@@ -116,7 +83,7 @@ const getButtonStyles = (i: number) => {
 }
 
 .preview:hover {
-    transform: skew(-10deg) scale(1.25);
+    transform: skew(-5deg) scale(1.25);
 }
 
 .preview .button {
@@ -128,7 +95,7 @@ const getButtonStyles = (i: number) => {
 }
 
 .preview:hover .button {
-    transform: skew(10deg) scale(0.75);
+    transform: skew(5deg) scale(0.75);
     /* margin: 0.5rem 0; */
     opacity: 1;
 }

@@ -1,9 +1,8 @@
 <script setup lang="ts">
-const props = defineProps<{
+import { formatDate } from '~~/composables/formatDate';
+defineProps<{
     experience: IExperience
 }>();
-
-const formatDate = (inDate?: string) => inDate?.split("/").reverse().join("/") || "current";
 </script>
 
 <template>
@@ -18,7 +17,7 @@ const formatDate = (inDate?: string) => inDate?.split("/").reverse().join("/") |
         >
             {{ experience.orgName }}
         </a>
-        <small>
+        <small style="color: var(--warning);">
             ({{ formatDate(experience.startDate) }}—{{ formatDate(experience.endDate) }})
         </small>
         <p>

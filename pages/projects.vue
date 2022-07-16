@@ -2,6 +2,9 @@
 useHead({
     title: "Projects"
 });
+
+const { data: projectsContent } = 
+    await useAsyncData("projectsContent", () => queryContent<IProject>("/projects").sort({ startDate: -1 }).find());
 </script>
 
 <template>
@@ -10,7 +13,7 @@ useHead({
             <h1 class="h2">My Projects</h1>
         </header>
 
-        <ProjectCard />
+        <ProjectCard v-for="project of projectsContent" :project="project" />
 
         <BackToTop />
     </section>
