@@ -1,0 +1,18 @@
+title: Disasternaut
+startDate: 2021/10
+tags: typescript,vue,kaboomjs
+image: /img/cms/1635135533858_25651527b24d404b421ff6460df64d0c.jpeg
+description: Become the intergalactic colonist you always dreamed you'd be! Make
+  your family proud!
+award:
+  exists: true
+  title: Won Best Story
+  compName: Repl.it Kajam 2022
+  compSite: Repl.it Kajam 2022
+links:
+  - name: Play the game!
+    site: https://disasternaut.lehuyh.repl.co/
+  - name: View source
+    site: https://github.com/LehuyH/disasternaut
+  - name: View submission
+    site: https://replit.com/talk/share/Disasternaut-or-A-fast-paced-and-light-hearted-survival-game-for-Kajam2021/147579
