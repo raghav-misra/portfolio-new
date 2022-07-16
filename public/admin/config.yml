@@ -1,64 +1,85 @@
 backend:
   name: git-gateway
   branch: master
-
-media_folder: public/img/cms
+media_folder: public/ims/cms
 public_folder: /img/cms
-
 collections:
-  - name: "experiences"
-    label: "Experiences"
-    folder: "content/experiences"
-    format: "yaml"
+  - name: experiences
+    label: Experiences
+    folder: content/experiences
+    format: yaml
     create: true
-    slug: "{{slug}}-{{orgName}}"
+    slug: '{{slug}}-{{orgName}}'
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Organization Name", name: "orgName", widget: "string" }
-      - { label: "Organization Website", name: "orgSite", widget: "string" }
-      - { label: "Start Date (yyyy/mm)", name: "startDate", widget: "string" }
-      - {
-          label: "End Date (yyyy/mm)",
-          name: "endDate",
-          widget: "string",
-          required: false,
-        }
-      - { label: "Description", name: "description", widget: "text" }
-  - name: "projects"
-    label: "Projects"
-    folder: "content/projects"
-    format: "yaml"
+      - label: Title
+        name: title
+        widget: string
+      - label: Organization Name
+        name: orgName
+        widget: string
+      - label: Organization Website
+        name: orgSite
+        widget: string
+      - label: Start Date (yyyy/mm)
+        name: startDate
+        widget: string
+      - label: End Date (yyyy/mm)
+        name: endDate
+        widget: string
+        required: false
+      - label: Description
+        name: description
+        widget: text
+  - name: projects
+    label: Projects
+    folder: content/projects
+    format: yaml
     create: true
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Start Date (yyyy/mm)", name: "startDate", widget: "string" }
-      - { label: "Tags (comma-separated)", name: "tags", widget: "string" }
-      - { 
-          label: "Preview Image", 
-          name: "image", 
-          widget: "image",
-          choose_url: false, 
-        }
-      - { label: "Description", name: "description", widget: "text" }
-      - {
-          label: "Award",
-          name: "award",
-          widget: "object",
-          fields:
-            - { label: "Did this project win an award?", name: "exists", widget: "boolean" }
-            - { label: "Award Infinitive (ex. Won First Place)", name: "title", widget: "string", required: false }
-            - { label: "Competition Name (ex. Fortnite World Cup)", name: "compName", widget: "string", required: false }
-            - { label: "Competition URL (ex. https://epicgames.com)", name: "compSite", widget: "string", required: false }
-        }
-      - {
-          label: "Buttons",
-          name: "links",
-          widget: "list",
-          min: 1,
-          max: 3,
-          fields:
-            - { label: "Button Text", name: "name", widget: "string" }
-            - { label: "Redirect Link", name: "site", widget: "string" }
-        }
-      
-      
+      - label: Title
+        name: title
+        widget: string
+      - label: Start Date (yyyy/mm)
+        name: startDate
+        widget: string
+      - label: Tags (comma-separated)
+        name: tags
+        widget: string
+      - label: Preview Image
+        name: image
+        widget: image
+        choose_url: false
+      - label: Description
+        name: description
+        widget: text
+      - label: Award
+        name: award
+        widget: object
+        fields:
+          - label: Did this project win an award?
+            name: exists
+            widget: boolean
+          - label: Award Infinitive (ex. Won First Place)
+            name: title
+            widget: string
+            required: false
+          - label: Competition Name (ex. Fortnite World Cup)
+            name: compName
+            widget: string
+            required: false
+          - label: Competition URL (ex. https://epicgames.com)
+            name: compSite
+            widget: string
+            required: false
+      - label: Buttons
+        name: links
+        widget: list
+        min: 1
+        max: 3
+        fields:
+          - label: Button Text
+            name: name
+            widget: string
+          - label: Redirect Link
+            name: site
+            widget: string
