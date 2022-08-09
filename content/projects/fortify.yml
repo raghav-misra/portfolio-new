@@ -1,0 +1,18 @@
+title: Fortify
+startDate: 2020/03
+tags: web components,express,mongodb
+image: /img/cms/fortify.png
+description: Fortify is a self-care web platform that promotes effective safety
+  strategies during the pandemic and activities that practice social distancing.
+award:
+  exists: true
+  title: Won First Place
+  compName: "Repl.it Code Jam #9"
+  compSite: https://replit.com/talk/announcements/At-Home-Students-Code-Jam/32045
+links:
+  - name: Check it out!
+    site: https://codejamentry.raghavm.repl.co/
+  - name: View source
+    site: https://github.com/raghav-misra/Fortify
+  - name: View submission
+    site: https://replit.com/talk/announcements/At-Home-Students-Code-Jam/32045
