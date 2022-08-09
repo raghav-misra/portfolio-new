@@ -1,0 +1,16 @@
+title: WriteKit
+startDate: 2020/10
+tags: vue,lambda,faunadb
+image: /img/cms/writekit.png
+description: Structure your writing projects with a powerful, intuitive
+  pattern-based workflow.
+award:
+  exists: true
+  title: Won First Place
+  compName: GigaHacks
+  compSite: https://www.gigahacks.tech/
+links:
+  - name: Check it out!
+    site: https://writekit.netlify.app/
+  - name: View source
+    site: https://github.com/LehuyH/WriteKit
