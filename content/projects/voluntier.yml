@@ -1,0 +1,20 @@
+title: VolunTier
+startDate: 2020/09
+tags: vue,lambda,mongodb
+image: /img/cms/voluntier.png
+description: >+
+  An all-in-one platform that brings a competitive, cooperative environment to
+  community service.
+
+award:
+  exists: true
+  title: Won The Wolfram Award
+  compName: DeltaX Hacks
+  compSite: https://deltax-hacks-10572.devpost.com/
+links:
+  - name: Check it out!
+    site: https://voluntier.netlify.app/
+  - name: View source
+    site: https://github.com/raghav-misra/voluntier/
+  - name: View submission
+    site: https://devpost.com/software/voluntier-8osag2
