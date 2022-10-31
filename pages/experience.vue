@@ -14,6 +14,8 @@ const currentExperiences = computed(() => experiencesContent.value.filter(e => !
 const pastExperiences = computed(() => experiencesContent.value.filter(e => !!e.endDate));
 </script>
 
+
+
 <style src="@vueform/toggle/themes/default.css" />
 
 <template>
@@ -41,7 +43,10 @@ const pastExperiences = computed(() => experiencesContent.value.filter(e => !!e.
                 orgSite: 'https://professional.mit.edu/',
                 startDate: '2022/07'
             }">
-                
+                Worked with the data science ecosystem around Python, including NumPy, Pandas, and Scikit-learn, to
+                design data models with regression and decision trees, perform both unsupervised and supervised
+                learning, and build robust recommendation systems.
+                <i><a href="https://eportfolio.mygreatlearning.com/raghav-misra" target="_blank">Program Portfolio</a></i>
             </EducationCard>
             <EducationCard :experience="{
                 title: 'High School Senior',
@@ -49,7 +54,7 @@ const pastExperiences = computed(() => experiencesContent.value.filter(e => !!e.
                 orgSite: 'https://amador.pleasantonusd.net/',
                 startDate: '2019/08'
             }">
-                <b>Activities</b>: ACE Coding (Instructor), AmadorUAVs (Imaging Lead), Web Development (President)
+                <b>Activities</b>: ACE Coding Club (Instructor & Curriculum Designer), AmadorUAVs (Project Development & Imaging Lead), Web Development Club (Co-President)
             </EducationCard>
         </div>
     </section>
