@@ -3,6 +3,6 @@ orgName: AmadorUAVs
 orgSite: https://amadoruavs.com
 startDate: 2019/11
 endDate: 2022/11
-description: I manage the imaging software stack for use with our coaxial
-  octocopter, Boreas. I'm a core member of the high-school team, earning second
-  place in the international collegiate SUAS competition.
+description: Overhauled club website with Vue, later Hugo. Led development team
+  to engineer full-stack system image-processing system with TypeScript & Python
+  to work with drone imagery.
