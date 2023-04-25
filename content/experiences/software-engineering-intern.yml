@@ -3,6 +3,7 @@ orgName: BanqFora
 orgSite: https://www.banqfora.com/
 startDate: 2022/03
 endDate: 2023/03
-description: I am a core developer on various applications essential to the
-  product, and use web technologies, such as ReactJS and TypeScript to build
-  customer demos and web platforms.
+description: >
+  Designed & architected Customer Data Portal with React & NextJS. Implemented
+  GraphQL & REST APIs in isomorphic web applications. Wrote various project
+  migration scripts using Python (and Beautiful Soup).
