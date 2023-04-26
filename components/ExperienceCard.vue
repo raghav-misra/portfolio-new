@@ -8,14 +8,14 @@ defineProps<{
 <template>
     <div class="experience-card box">
         <header>
-            <b class="h4">{{ experience.title }}&nbsp;</b>
+            <b class="h4">{{ experience.role }}&nbsp;</b>
         </header>
         <a 
             class="h6"
             target="_blank"
-            :href="experience.orgSite"    
+            :href="experience.website"    
         >
-            {{ experience.orgName }}
+            {{ experience.title }}
         </a>
         <small style="color: var(--warning);">
             ({{ formatDate(experience.startDate) }}—{{ formatDate(experience.endDate) }})

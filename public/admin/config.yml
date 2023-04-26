@@ -10,16 +10,16 @@ collections:
   folder: content/experiences
   format: yaml
   create: true
-  slug: "{{slug}}-{{orgName}}"
+  slug: "{{role}}-{{title}}"
   fields:
-  - label: Title
-    name: title
+  - label: Job Role
+    name: role
     widget: string
   - label: Organization Name
-    name: orgName
+    name: title
     widget: string
   - label: Organization Website
-    name: orgSite
+    name: website
     widget: string
   - label: Start Date (yyyy/mm)
     name: startDate

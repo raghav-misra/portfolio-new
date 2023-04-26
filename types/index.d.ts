@@ -1,7 +1,7 @@
 declare interface IExperience {
-    title: string;
-    orgName: string;
-    orgSite: string;
+    title: string; // company name
+    role: string; // my role
+    website: string; // company website
     startDate: string;
     endDate?: string;
     description: string;
