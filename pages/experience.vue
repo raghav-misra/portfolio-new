@@ -38,7 +38,16 @@ const pastExperiences = computed(() => experiencesContent.value.filter(e => !!e.
         </div>
         <div v-else>
             <EducationCard :experience="{
-                title: 'Applied Data Science Program Student',
+                title: 'B.S. in Computer Science, B.S. in Economics',
+                orgName: 'University of Maryland, College Park',
+                orgSite: 'https://umd.edu/',
+                startDate: '2023/08'
+            }">
+                <p>Pursuing my interests in Computer Science and Economics at the University of Maryland, College Park.</p>
+                <p><b>Activities</b>: Student Researcher in the UMD First-Year Innovation and Research Experience</p>
+            </EducationCard>
+            <EducationCard :experience="{
+                title: 'Certificate in Applied Data Science',
                 orgName: 'MIT Professional Education',
                 orgSite: 'https://professional.mit.edu/',
                 startDate: '2022/07'
@@ -49,12 +58,12 @@ const pastExperiences = computed(() => experiencesContent.value.filter(e => !!e.
                 <i><a href="https://eportfolio.mygreatlearning.com/raghav-misra" target="_blank">Program Portfolio</a></i>
             </EducationCard>
             <EducationCard :experience="{
-                title: 'High School Senior',
+                title: 'High School Diploma',
                 orgName: 'Amador Valley High School',
                 orgSite: 'https://amador.pleasantonusd.net/',
                 startDate: '2019/08'
             }">
-                <b>Activities</b>: ACE Coding Club (Instructor & Curriculum Designer), AmadorUAVs (Project Development & Imaging Lead), Web Development Club (Co-President)
+                <b>Activities</b>: ACE Coding Club (Instructor & Curriculum Designer), AmadorUAVs (Software Engineer), Web Development Club (President)
             </EducationCard>
         </div>
     </section>
