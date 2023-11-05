@@ -41,7 +41,7 @@ const pastExperiences = computed(() => experiencesContent.value.filter(e => !!e.
                 title: 'Computer Science (BS) and Economics (BA)',
                 orgName: 'University of Maryland, College Park',
                 orgSite: 'https://umd.edu/',
-                startDate: '2023/08'
+                endDate: '2025/05',
             }">
                 <p><b>Relevant Coursework:</b> Data Structures & Algorithms, Computer Systems, Linear Algebra, Discrete Mathematics, Microeconomics.</p>
                 <p><b>Activities:</b> App Development Club (Instructor), First-Year Research and Innovation Experience (Researcher).</p>
@@ -50,7 +50,7 @@ const pastExperiences = computed(() => experiencesContent.value.filter(e => !!e.
                 title: 'Certificate in Applied Data Science',
                 orgName: 'MIT Professional Education',
                 orgSite: 'https://professional.mit.edu/',
-                startDate: '2022/07'
+                endDate: '2022/10',
             }">
                 Worked with the data science ecosystem around Python, including NumPy, Pandas, and Scikit-learn, to
                 design data models with regression and decision trees, perform both unsupervised and supervised
@@ -60,8 +60,7 @@ const pastExperiences = computed(() => experiencesContent.value.filter(e => !!e.
             <EducationCard :experience="{
                 title: 'High School Diploma (Outstanding Academic Excellence)',
                 orgName: 'Amador Valley High School',
-                orgSite: 'https://amador.pleasantonusd.net/',
-                startDate: '2019/08'
+                orgSite: 'https://amador.pleasantonusd.net/'
             }">
                 <p><b>College-Level Coursework:</b> Calculus I, II, and III, Probability and Statistics, Introductory Java, Introductory C++, Macroeconomics.</p>
                 <p><b>Activities</b>: ACE Coding Club (Instructor), AmadorUAVs (Software Engineer), Web Development Club (President).</p>
