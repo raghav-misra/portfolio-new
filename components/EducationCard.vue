@@ -17,8 +17,8 @@ defineProps<{
         >
             {{ experience.orgName }}
         </a>
-        <small style="color: var(--warning);">
-            ({{ formatDate(experience.startDate) }}—{{ formatDate(experience.endDate) }})
+        <small style="color: var(--warning);" v-if="experience.endDate">
+            ({{ formatDate(experience.endDate) }})
         </small>
         <p>
            <slot />
