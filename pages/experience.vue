@@ -38,16 +38,16 @@ const pastExperiences = computed(() => experiencesContent.value.filter(e => !!e.
         </div>
         <div v-else>
             <EducationCard :experience="{
-                title: 'Computer Science (BS) and Economics (BA)',
+                title: 'B.S. in Computer Science and Mathematics',
                 orgName: 'University of Maryland, College Park',
                 orgSite: 'https://umd.edu/',
                 endDate: '2025/05',
             }">
-                <p><b>Relevant Coursework:</b> Data Structures & Algorithms, Computer Systems, Linear Algebra, Discrete Mathematics, Microeconomics.</p>
-                <p><b>Activities:</b> App Development Club (Instructor), First-Year Research and Innovation Experience (Researcher).</p>
+                <p><b>Grade:</b> 4.0</p>
+                <p><b>Coursework:</b> Object-Oriented Programming, Data Structures, Algorithms, Computer Systems, Discrete Mathematics, Vector Calculus, Applied Linear Algebra, Probability & Statistics, Combinatorics and Graph Theory.</p>
             </EducationCard>
             <EducationCard :experience="{
-                title: 'Certificate in Applied Data Science',
+                title: 'Cerificate in Applied Data Science',
                 orgName: 'MIT Professional Education',
                 orgSite: 'https://professional.mit.edu/',
                 endDate: '2022/10',
@@ -55,15 +55,8 @@ const pastExperiences = computed(() => experiencesContent.value.filter(e => !!e.
                 Worked with the data science ecosystem around Python, including NumPy, Pandas, and Scikit-learn, to
                 design data models with regression and decision trees, perform both unsupervised and supervised
                 learning, and build robust recommendation systems.
+                <p><b>Coursework:</b> Data Analysis/Visualization, Machine Learning, Deep Learning, Recommendation Systems.</p>
                 <i><a href="https://eportfolio.mygreatlearning.com/raghav-misra" target="_blank">Program Portfolio</a></i>
-            </EducationCard>
-            <EducationCard :experience="{
-                title: 'High School Diploma (Outstanding Academic Excellence)',
-                orgName: 'Amador Valley High School',
-                orgSite: 'https://amador.pleasantonusd.net/'
-            }">
-                <p><b>College-Level Coursework:</b> Calculus I, II, and III, Probability and Statistics, Introductory Java, Introductory C++, Macroeconomics.</p>
-                <p><b>Activities</b>: ACE Coding Club (Instructor), AmadorUAVs (Software Engineer), Web Development Club (President).</p>
             </EducationCard>
         </div>
     </section>
