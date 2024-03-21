@@ -1,9 +1,9 @@
-role: Software Engineering Intern
+role: Software Engineer Intern
 title: Hack+
 website: https://hackplus.io/
 startDate: 2020/12
 endDate: 2022/05
-description: Spearheaded development on mobile app with React Native &
-  TypeScript. Pushed for TypeScript on existing codebases; wrote shared typings.
-  Worked on frontend & backend of Dash, the flagship Hack+ platform. Developed a
-  templating system to automate user notifications via email.
+description: Spearheaded development on Hack+ mobile application with React
+  Native and TypeScript. Initiated conversion of frontend and backend codebase
+  from JavaScript to TypeScript. Developed a notification templating system for
+  the backend to cleanly automate user updates and messages.
