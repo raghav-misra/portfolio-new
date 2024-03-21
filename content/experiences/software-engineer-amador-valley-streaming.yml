@@ -1,9 +1,0 @@
-role: Software Engineer
-title: Amador Valley Streaming
-website: https://www.amadoruavs.com/streaming/
-startDate: 2021/02
-endDate: 2022/05
-description: "Develop and maintain a full stack web service, with VueJS,
-  Express, and TypeScript, that interacts with CasparCG and is designed to
-  configure and display graphical overlays during live streams of various school
-  events. "
