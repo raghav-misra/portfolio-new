@@ -1,9 +1,11 @@
-role: Software Engineer & Project Lead
+role: Software Engineer
 title: AmadorUAVs
 website: https://amadoruavs.com
 startDate: 2019/11
 endDate: 2022/11
-description: Overhauled club website with Vue, later Hugo. Led development team
-  to engineer full-stack system image-processing system with TypeScript & Python
-  to work with drone imagery. Won second place internationally at the 2022 SUAS
-  Competition.
+description: Led team to develop a full stack image classification system using
+  and Django, OpenCV, and Celery. Built Python library to connect UAV ground
+  station with embedded drone software during competition flights. Designed
+  SEO-friendly website for robotics club in VueJS, later rebuilt in Hugo,
+  increased web traffic by 200%. Earned Second Place at RoboNation Unmanned
+  Aerial Systems, among 80+ international collegiate robotics teams.
