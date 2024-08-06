@@ -1,7 +1,9 @@
-role: Undergraduate Researcher, Quantum Machine Learning
+role: Machine Learning Research Intern
 title: University of Maryland
 website: https://umd.edu/
 startDate: 2023/08
-description: Apply concepts of quantum computing and IBM Qiskit to accelerate
-  AI/ML processes such as deep learning and regression as a part of the Quantum
-  Machine Learning research group under Dr. Shabnam Jabeen.
+description: >-
+  Quantifying benefits of quantum vs. classical support vector classifiers in
+  predictive modeling under Dr. Shabnam Jabeen.
+
+  Designing ML pipelines to optimize data retrieval and natural language querying with large language models under Dr. Rajeev Barua.
