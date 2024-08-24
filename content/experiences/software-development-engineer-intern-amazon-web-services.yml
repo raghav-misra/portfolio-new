@@ -2,8 +2,5 @@ role: Software Development Engineer Intern
 title: Amazon Web Services
 website: https://aws.amazon.com
 startDate: 2024/05
-description: >-
-  Built CLI utility with Python, allowing team to efficiently generate
-  authentication tokens and make signed requests to EBS direct APIs.
-
-  Refactored Java API and wrote networking code in C to implement low latency strategy to conditionally rate-limit API reads to data snapshots, based on presence in a distributed Varnish cache fleet, increasing calls per second of high-frequency clients by over 500%.
+endDate: 2024/08
+description: EBS Snapshots
